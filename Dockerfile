@@ -11,3 +11,6 @@ map[80/tcp:{}]
 
 CONTAINER ID IMAGE  COMMAND                CREATED       STATUS        PORTS                                     NAMES
 efb8b8ba5dc1 nginx  "/docker-entrypoint.…" 5 minutes ago Up 5 minutes  0.0.0.0:49155->80/tcp, :::49155->80/tcp
+$ docker ps -a
+CONTAINER ID IMAGE COMMAND CREATED STATUS PORTS
+716353d6f763 nginx "/docker-entrypoint.…" 3 seconds ago Up 3 seconds 0.0.0.0:80->80/tcp, :::80->80/tcp
