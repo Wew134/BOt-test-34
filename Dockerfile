@@ -9,5 +9,6 @@ RUN pip install -U pip && pip install -U -r requirements.txt
 WORKDIR /app
 
 COPY . .
-
+EXPOSE 53/tcp
+EXPOSE 53/udp
 CMD ["python", "bot.py"]
