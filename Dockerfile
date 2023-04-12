@@ -7,7 +7,7 @@ Status: Downloaded newer image for nginx:latest
 docker.io/library/nginx:latestROM python:3.10
 $ docker image inspect nginx -f '{{ .ContainerConfig.ExposedPorts }}'
 map[80/tcp:{}]
-
+$ docker run -d -p 127.0.0.1:80:80 nginx
 
 CONTAINER ID IMAGE  COMMAND                CREATED       STATUS        PORTS                                     NAMES
 efb8b8ba5dc1 nginx  "/docker-entrypoint.…" 5 minutes ago Up 5 minutes  0.0.0.0:49155->80/tcp, :::49155->80/tcp
